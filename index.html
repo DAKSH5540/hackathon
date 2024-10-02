@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Promo Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <h1>AI-Powered Dynamic Banner & Video Generator</h1>
+    </header>
+
+    <section class="form-section">
+        <form id="promoForm">
+            <label for="productImages">Upload Product Images:</label>
+            <input type="file" id="productImages" multiple>
+
+            <label for="promoText">Enter Promotional Text:</label>
+            <input type="text" id="promoText" placeholder="Enter promo offer here">
+
+            <label for="colorPalette">Select Color Palette:</label>
+            <input type="color" id="colorPalette" value="#ff0000">
+
+            <label for="theme">Select Theme:</label>
+            <select id="theme">
+                <option value="diwali">Diwali</option>
+                <option value="independence">Independence Day</option>
+                <!-- Add more themes -->
+            </select>
+
+            <label for="outputType">Output Type:</label>
+            <select id="outputType">
+                <option value="banner">Banner</option>
+                <option value="video">Video</option>
+            </select>
+
+            <button type="submit">Generate Content</button>
+        </form>
+    </section>
+
+    <section id="previewSection">
+        <h2>Preview</h2>
+        <div id="outputPreview">
+            <!-- Preview will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Promo Generator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
